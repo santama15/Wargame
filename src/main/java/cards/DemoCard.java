@@ -22,12 +22,12 @@ public class DemoCard {
         Player playerOne = new Player("Piotr");
         Player playerTwo = new Player("Adam");
 
-        War warGame = new War(playerOne, playerTwo);
+        War wargame = new War(playerOne, playerTwo);
 
-        warGame.playerOne.setCards(warGame.deckPartOne());
-        warGame.playerTwo.setCards(warGame.deckPartTwo());
+        wargame.playerOne.setCards(wargame.deckPartOne());
+        wargame.playerTwo.setCards(wargame.deckPartTwo());
 
-        Player winner = warGame.battle(playerOne, playerTwo);
+        Player winner = wargame.battle(playerOne, playerTwo);
 
         System.out.println("Wygrywa " + winner.getName() + " z wynikiem: " + winner.getPoints());
 
